@@ -1,86 +1,115 @@
-/* color palette from <https://github.com/vuejs/theme> */
+/*==========================================================================
+ROOT
+==========================================================================*/
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
-
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
-
-  --vt-c-indigo: #2c3e50;
-
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --BackgroundGrey: #293233;
+  --backgroundBrown: #524034;
+  --backgroundBlue: #3B777C;
+  --accentGreen: #567333;
+  --accentOrange: #d1681d;
+  --accentBlue: #5CBCC4;
+  --text-color: #FFF;
+  --accentShadow: #1c110a;
+  --shadow: drop-shadow(#1C110A 0 0.2rem 0.2rem) drop-shadow(#1C110A 0 -0.2rem 0.2rem);
+  --shadowSubtle: drop-shadow(#1C110A 0 0.2rem 0.2rem);
+  --shadowGreen: drop-shadow(var(--accentGreen) 0 0.2rem 0.2rem) drop-shadow(var(--accentGreen) 0 -0.2rem 0.2rem);
+  --fonthead: "Berkshire Swash";
+  --fonttext: "Signika Negative";
 }
 
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+@font-face {
+  font-display: swap;
+  font-family: "Signika Negative";
 
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
+  font-style: normal;
+  font-weight: 400;
+  src: url("src/assets/Fonts/signika-negative-v21-latin-regular.woff2") format("woff2");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
+@font-face {
+  font-display: swap;
+  font-family: "Berkshire Swash";
+  font-style: normal;
+  font-weight: 400;
+  src: url("src/assets/Fonts/berkshire-swash-v20-latin-regular.woff2") format("woff2");
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/*==========================================================================
+Basic Design
+==========================================================================*/
+* {
   margin: 0;
-  font-weight: normal;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
 }
 
-body {
-  min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
-  line-height: 1.6;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  background: var(--BackgroundGrey);
+  color: var(--text-color);
+  font-family: var(--fonttext);
+  text-align: center;
+}
+
+main {
+  margin-top: 15rem;
+  padding: 2rem;
+}
+
+footer {
+  background-color: var(--accentOrange);
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  border-radius: 2rem 2rem 0.5rem 0.5rem;
+}
+
+h1 {
+  font-family: var(--fonthead);
+  margin: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  -webkit-filter:
+    drop-shadow(var(--accentOrange)0.1rem 0.1rem 0rem) drop-shadow(var(--accentOrange)-0.1rem -0.1rem 0rem) drop-shadow(var(--accentGreen)-0.1rem -0.1rem 5rem) drop-shadow(var(--accentGreen)0.1rem 0.1rem 5rem) drop-shadow(var(--accentGreen)-0.1rem -0.1rem 5rem) drop-shadow(var(--accentGreen)0.1rem 0.1rem 5rem);
+  filter:
+    drop-shadow(var(--accentOrange)0.1rem 0.1rem 0rem) drop-shadow(var(--accentOrange)-0.1rem -0.1rem 0rem) drop-shadow(var(--accentGreen)-0.1rem -0.1rem 5rem) drop-shadow(var(--accentGreen)0.1rem 0.1rem 5rem) drop-shadow(var(--accentGreen)-0.1rem -0.1rem 5rem) drop-shadow(var(--accentGreen)0.1rem 0.1rem 5rem);
+  z-index: -99;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: var(--fonthead);
+}
+
+.button {
+  background-color: var(--accentGreen);
+  padding: 0.5rem;
+  color: var(--text-color);
+  font-family: var(--fonttext);
+  border-radius: 0.5rem 2rem 2rem 2rem;
+  border: solid 0.2rem var(--accentOrange);
+  -webkit-filter: var(--shadowSubtle);
+  filter: var(--shadowSubtle);
+}
+
+
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  position: fixed;
+  z-index: 999;
+  background-color: var(--accentOrange);
+  width: 100vw;
+  top: 0;
+  border-radius: 0.5rem 0.5rem 2rem 2rem;
 }
