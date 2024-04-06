@@ -26,7 +26,7 @@ ROOT
 
   font-style: normal;
   font-weight: 400;
-  src: url("src/assets/Fonts/signika-negative-v21-latin-regular.woff2") format("woff2");
+  src: url("/src/assets/Fonts/signika-negative-v21-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -34,7 +34,7 @@ ROOT
   font-family: "Berkshire Swash";
   font-style: normal;
   font-weight: 400;
-  src: url("src/assets/Fonts/berkshire-swash-v20-latin-regular.woff2") format("woff2");
+  src: url("/src/assets/Fonts/berkshire-swash-v20-latin-regular.woff2") format("woff2");
 }
 
 /*==========================================================================

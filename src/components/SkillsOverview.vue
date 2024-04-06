@@ -115,7 +115,7 @@ defineProps({
 
 .Pumpkin {
   display: flex;
-  background-image: url(src/assets/images/own_logo/Logo_colored.png);
+  background-image: url(/src/assets/images/own_logo/Logo_colored.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -146,6 +146,6 @@ defineProps({
 }
 
 .Grey {
-  background-image: url(src/assets/images/own_logo/Logo_grey.png);
+  background-image: url(/src/assets/images/own_logo/Logo_grey.png);
 }
 </style>
