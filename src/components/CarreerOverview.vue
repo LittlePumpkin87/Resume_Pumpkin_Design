@@ -6,17 +6,17 @@ defineProps({
   }
 })
 
-import CarreerPath2024 from './CarreerPath2024.vue';
-import CarreerPath2023 from './CarreerPath2023.vue';
-import CarreerPath2022 from './CarreerPath2022.vue';
-import CarreerPath2021 from './CarreerPath2021.vue';
-import CarreerPath2017 from './CarreerPath2017.vue';
-import CarreerPath2015 from './CarreerPath2015.vue';
-import CarreerPath2013 from './CarreerPath2013.vue';
-import CarreerPath2012 from './CarreerPath2012.vue';
-import CarreerPath2011 from './CarreerPath2011.vue';
-import CarreerPath2010 from './CarreerPath2010.vue';
-import CarreerPath2005 from './CarreerPath2005.vue';
+import CarreerPath2024 from './CarreerComponents/CarreerPath2024.vue';
+import CarreerPath2023 from './CarreerComponents/CarreerPath2023.vue';
+import CarreerPath2022 from './CarreerComponents/CarreerPath2022.vue';
+import CarreerPath2021 from './CarreerComponents/CarreerPath2021.vue';
+import CarreerPath2017 from './CarreerComponents/CarreerPath2017.vue';
+import CarreerPath2015 from './CarreerComponents/CarreerPath2015.vue';
+import CarreerPath2013 from './CarreerComponents/CarreerPath2013.vue';
+import CarreerPath2012 from './CarreerComponents/CarreerPath2012.vue';
+import CarreerPath2011 from './CarreerComponents/CarreerPath2011.vue';
+import CarreerPath2010 from './CarreerComponents/CarreerPath2010.vue';
+import CarreerPath2005 from './CarreerComponents/CarreerPath2005.vue';
 
 </script>
 
