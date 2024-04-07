@@ -1,5 +1,7 @@
 @import './base.css';
 
+@import './Skill.css';
+
 @import './Carreer.css';
 
-@import './Skill.css';
+@import './animate.min.css';

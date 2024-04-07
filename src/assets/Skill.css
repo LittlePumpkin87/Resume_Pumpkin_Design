@@ -1,25 +1,36 @@
 .SkillBar {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-    border-radius: 2rem 0rem 2rem 0.5rem;
-    border-bottom: solid 0.4rem var(--accentOrange);
-    border-left: solid 0.4rem var(--accentOrange);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  border-radius: 2rem 0rem 2rem 0.5rem;
+  border-bottom: solid 0.4rem var(--accentOrange);
+  border-left: solid 0.4rem var(--accentOrange);
+}
+
+.Skill {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+}
+
+.SkillName {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.Pumpkin {
+  display: flex;
+  background-image: url(/src/assets/images/own_logo/Logo_colored.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 4rem;
+  width: 4rem;
   }
   
-  .Skill {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 1rem;
-  }
-  
-  .SkillName {
-    display: flex;
-    text-align: left;
-    align-items: center;
-    margin-right: 0.5rem;
-  }
-  
-  .Grey {
-    background-image: url(/src/assets/images/own_logo/Logo_grey.png);
-  }
+.Grey {
+  background-image: url(/src/assets/images/own_logo/Logo_grey.png);
+}
+

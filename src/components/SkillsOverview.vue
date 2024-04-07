@@ -1,11 +1,4 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
-
 import SkillHTML from './SkillComponents/SkillHTML.vue';
 import SkillCSS from './SkillComponents/SkillCSS.vue';
 import SkillJavascript from './SkillComponents/SkillJavascript.vue';
@@ -17,7 +10,6 @@ import SkillPHP from './SkillComponents/SkillPHP.vue';
 import SkillReact from './SkillComponents/SkillReact.vue';
 import SkillVSCode from './SkillComponents/SkillVSCode.vue';
 import SkillVue from './SkillComponents/SkillVue.vue';
-
 </script>
 
 <template>

@@ -38,6 +38,228 @@ ROOT
 }
 
 /*==========================================================================
+Animations
+==========================================================================*/
+
+@-webkit-keyframes Grow {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes Grow {
+  0% {
+    opacity: 0;
+    transform: translateX(1800px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes GrowLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(-15px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes GrowLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(-15px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes enter_right {
+  0% {
+    transform: scale(0, .02) rotate(0) translate(-100px);
+  }
+
+  50% {
+    transform: scale(1, .02) rotate(30deg) translate(-50px);
+  }
+}
+
+@keyframes enter_right {
+  0% {
+    transform: scale(0, .02) rotate(0) translate(-100px);
+  }
+
+  50% {
+    transform: scale(1, .02) rotate(30deg) translate(-50px);
+  }
+}
+
+@-webkit-keyframes enter_left {
+  0% {
+    transform: scale(0, .02) rotate(0) translate(50px);
+  }
+
+  50% {
+    transform: scale(1, .02) rotate(-30deg) translate(100px);
+  }
+}
+
+@keyframes enter_left {
+  0% {
+    transform: scale(0, .02) rotate(0) translate(50px);
+  }
+
+  50% {
+    transform: scale(1, .02) rotate(-30deg) translate(100px);
+  }
+}
+
+@-webkit-keyframes bounce_scale {
+
+  0%,
+  20% {
+    transform: scale(0);
+    rotate: 0deg;
+  }
+
+  40% {
+    transform: scale(1.2);
+    rotate: -20deg;
+  }
+
+  60% {
+    transform: scale(0.7);
+    rotate: 20deg;
+  }
+
+  80% {
+    transform: scale(1.5);
+    rotate: -20deg;
+  }
+
+  100% {
+    transform: scale(1);
+    rotate: 0deg;
+  }
+}
+
+@keyframes bounce_scale {
+
+  0%,
+  20% {
+    transform: scale(0);
+    rotate: 0deg;
+  }
+
+  40% {
+    transform: scale(1.2);
+    rotate: -20deg;
+  }
+
+  60% {
+    transform: scale(0.7);
+    rotate: 20deg;
+  }
+
+  80% {
+    transform: scale(1.5);
+    rotate: -20deg;
+  }
+
+  100% {
+    transform: scale(1);
+    rotate: 0deg;
+  }
+}
+
+@-webkit-keyframes wiggle {
+
+  0%,
+  100% {
+    rotate: 0deg;
+  }
+
+  40% {
+    rotate: 10deg;
+  }
+
+  60% {
+    rotate: -20deg;
+  }
+
+  80% {
+    rotate: 0deg;
+  }
+}
+
+@keyframes wiggle {
+
+  0%,
+  100% {
+    rotate: 0deg;
+  }
+
+  40% {
+    rotate: 10deg;
+  }
+
+  60% {
+    rotate: -20deg;
+  }
+
+  80% {
+    rotate: 0deg;
+  }
+}
+
+/*==========================================================================
 Basic Design
 ==========================================================================*/
 * {

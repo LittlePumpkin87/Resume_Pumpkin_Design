@@ -1,14 +1,5 @@
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
-</script>
-
 <template>
-  <div class="container left">
+  <div class="container left" >
           <div class="content_left">
             <h2>2021</h2>
             <p>Gartenbau-Helferin und Minijob
